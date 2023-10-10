@@ -1,38 +1,321 @@
-.App {
+.stepone,
+.steptwo {
+  width: 100%;
+  overflow: hidden;
+}
+.Header {
+  display: flex;
+  width: 100%;
+  background-color: rgba(218, 217, 217, 1);
+}
+.lefthead {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.lefthead img {
+  width: 25%;
+  padding-left: 20px;
+  padding-right: 70px;
+}
+.lefthead h2 {
+  color: var(--primary, #1185cb);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.righthead {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+.righthead img {
+  width: 5%;
+  padding-right: 15px;
+}
+.onemain,
+.twomain {
+  width: 100%;
+  display: flex;
+}
+.leftone {
+  width: 15%;
+  background: var(--primary, #1185cb);
+  height: auto;
+}
+.leftone p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 150%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding-top: 60vh;
+  padding-bottom: 55vh;
+  margin-top: 0px;
+}
+.rightone,
+.righttwo {
+  width: 85%;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  background: rgba(246, 247, 251, 1);
+  height: max-content;
+  margin: 10px;
+}
+.rightoneheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  margin: 7px;
+  height: 70px;
+  padding: 15px;
+}
+.one h1,
+.two h1,
+.three h1,
+.four h1,
+.fife h1,
+.two2 h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 4px;
+}
+.one,
+.two,
+.three,
+.four,
+.fife,
+.two2 {
+  display: flex;
+  align-items: center;
+}
+.oneimg,
+.twoimg,
+.threeimg,
+.fourimg,
+.fifeimg,
+.two2img {
+  width: 5%;
+  height: 200px;
+}
+.rightoneheader .one p {
+  color: var(--primary, #1185cb);
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+}
+.rightoneheader .two2 p {
+  color: var(--primary, #1185cb);
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+}
+.rightoneheader p {
+  color: #b3b3b3;
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.rightdata {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+.hrow1,
+.drow1,
+.drow2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+  flex-wrap: wrap;
+}
+.hrow2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+  flex-wrap: wrap;
+}
+.mb-1 {
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+}
+.mb-1 input {
+  border-radius: 4px;
+  border: 1px solid #000;
+  background: #fff;
+  width: 178px;
+  height: 26px;
+  flex-shrink: 0;
+}
+.Na {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 520;
+  line-height: normal;
+}
+input[type="date"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mb-3 label,
+.mb-4 label,
+.mb-5 label,
+.mb-6 label,
+.mb-7 label,
+.mb-8 label {
+  color: var(--black, #000);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mb-3 input,
+.mb-4 input,
+.mb-5 input,
+.mb-6 input,
+.mb-7 input,
+.mb-8 input {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  height: 20px;
+  padding: 10px;
+
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 0.5px solid #000;
+}
+.rightdata h3 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 40px;
+}
+button {
+  border-radius: 8px;
+  background-color: #1185cb;
+  width: 232px;
+  height: 48px;
+  flex-shrink: 0;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+a {
+  text-decoration: none;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  font-style: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.seclefthead h2 {
+  color: #71717a;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.seclefthead h3 {
+  color: var(--primary, #1185cb);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  padding-left: 30px;
+}
+@media only screen and (max-width: 979px) {
+  .leftone p {
+    font-size: 120%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 792px) {
+  .leftone p {
+    font-size: 90%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 608px) {
+  .leftone p {
+    transform: rotate(-90deg);
+    font-size: 190%;
+    margin-right: 45px;
+  }
+}
+@media only screen and (max-width: 352px) {
+  .seclefthead h3 {
+    padding-left: 5px;
+  }
+  .righthead img {
+    padding-right: 5px;
+  }
+}
+@media only screen and (max-width: 784px) {
+  .rightoneheader {
+    flex-direction: column;
+    height: auto;
+    margin: 0px;
+    padding: 9px;
+    align-items: start;
+  }
+
+  .one h1,
+  .two h1,
+  .three h1,
+  .four h1,
+  .fife h1,
+  .two2 h1 {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .seclefthead img {
+    padding-right: 2px;
   }
 }
